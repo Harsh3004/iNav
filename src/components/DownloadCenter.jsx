@@ -20,7 +20,7 @@ export default function DownloadCenter() {
     rate: 10
   });
 
-  const apkSha = "8f3b6c2d1e0a9f5b4c8e7d6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c";
+  const apkSha = "a20c701e5d61a3f38a7028ff9b214c4e05ac0d3e2a7d81bb81cd412999bddcb6";
 
   const handleDownloadApk = () => {
     if (downloadingApk) return;
@@ -41,8 +41,8 @@ export default function DownloadCenter() {
           } catch (e) {}
 
           const link = document.createElement('a');
-          link.href = '/iNAV-final-release';
-          link.download = 'inav-release-v1.4.2.apk';
+          link.href = `${import.meta.env.BASE_URL}iNAV-final-release.apk`;
+          link.download = 'iNAV-final-release.apk';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -189,7 +189,7 @@ export default function DownloadCenter() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--cyan)', fontFamily: 'var(--font-mono)', fontSize: '0.88rem', marginBottom: '1.2rem' }}>
                 <span>Build v1.4.2 (Production Stable)</span>
                 <span>•</span>
-                <span>24.8 MB</span>
+                <span>79.5 MB</span>
               </div>
 
               <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '1.8rem' }}>
