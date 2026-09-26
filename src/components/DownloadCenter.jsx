@@ -41,7 +41,7 @@ export default function DownloadCenter() {
           } catch (e) {}
 
           const link = document.createElement('a');
-          link.href = '/navpulse-release-v1.4.2.apk';
+          link.href = '/iNAV-final-release';
           link.download = 'inav-release-v1.4.2.apk';
           document.body.appendChild(link);
           link.click();

@@ -29,7 +29,7 @@ export default function HeroSection({ onDownloadApk }) {
       try { confetti({ particleCount: 100, spread: 70, origin: { y: 0.55 } }); } catch (e) {}
 
       const link = document.createElement('a');
-      link.href = '/navpulse-release-v1.4.2.apk';
+      link.href = '/iNAV-final-release';
       link.download = 'inav-v1.4.2.apk';
       document.body.appendChild(link);
       link.click();
